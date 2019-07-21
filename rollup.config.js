@@ -28,71 +28,71 @@ export default [
     plugins: [babel()]
   },
 
-  // ES for Browsers
-  {
-    input: 'src/index.js',
-    output: { file: 'es/redux.mjs', format: 'es', indent: false },
-    plugins: [
-      nodeResolve(),
-      replace({
-        'process.env.NODE_ENV': JSON.stringify('production')
-      }),
-      terser({
-        compress: {
-          pure_getters: true,
-          unsafe: true,
-          unsafe_comps: true,
-          warnings: false
-        }
-      })
-    ]
-  },
+  // // ES for Browsers
+  // {
+  //   input: 'src/index.js',
+  //   output: { file: 'es/redux.mjs', format: 'es', indent: false },
+  //   plugins: [
+  //     nodeResolve(),
+  //     replace({
+  //       'process.env.NODE_ENV': JSON.stringify('production')
+  //     }),
+  //     terser({
+  //       compress: {
+  //         pure_getters: true,
+  //         unsafe: true,
+  //         unsafe_comps: true,
+  //         warnings: false
+  //       }
+  //     })
+  //   ]
+  // },
 
-  // UMD Development
-  {
-    input: 'src/index.js',
-    output: {
-      file: 'dist/redux.js',
-      format: 'umd',
-      name: 'Redux',
-      indent: false
-    },
-    plugins: [
-      nodeResolve(),
-      babel({
-        exclude: 'node_modules/**'
-      }),
-      replace({
-        'process.env.NODE_ENV': JSON.stringify('development')
-      })
-    ]
-  },
+  // // UMD Development
+  // {
+  //   input: 'src/index.js',
+  //   output: {
+  //     file: 'dist/redux.js',
+  //     format: 'umd',
+  //     name: 'Redux',
+  //     indent: false
+  //   },
+  //   plugins: [
+  //     nodeResolve(),
+  //     babel({
+  //       exclude: 'node_modules/**'
+  //     }),
+  //     replace({
+  //       'process.env.NODE_ENV': JSON.stringify('development')
+  //     })
+  //   ]
+  // },
 
-  // UMD Production
-  {
-    input: 'src/index.js',
-    output: {
-      file: 'dist/redux.min.js',
-      format: 'umd',
-      name: 'Redux',
-      indent: false
-    },
-    plugins: [
-      nodeResolve(),
-      babel({
-        exclude: 'node_modules/**'
-      }),
-      replace({
-        'process.env.NODE_ENV': JSON.stringify('production')
-      }),
-      terser({
-        compress: {
-          pure_getters: true,
-          unsafe: true,
-          unsafe_comps: true,
-          warnings: false
-        }
-      })
-    ]
-  }
+  // // UMD Production
+  // {
+  //   input: 'src/index.js',
+  //   output: {
+  //     file: 'dist/redux.min.js',
+  //     format: 'umd',
+  //     name: 'Redux',
+  //     indent: false
+  //   },
+  //   plugins: [
+  //     nodeResolve(),
+  //     babel({
+  //       exclude: 'node_modules/**'
+  //     }),
+  //     replace({
+  //       'process.env.NODE_ENV': JSON.stringify('production')
+  //     }),
+  //     terser({
+  //       compress: {
+  //         pure_getters: true,
+  //         unsafe: true,
+  //         unsafe_comps: true,
+  //         warnings: false
+  //       }
+  //     })
+  //   ]
+  // }
 ]

@@ -1,4 +1,5 @@
 import createStore from './createStore'
+import createChainStore from './createChainStore'
 import combineReducers from './combineReducers'
 import bindActionCreators from './bindActionCreators'
 import applyMiddleware from './applyMiddleware'
@@ -18,7 +19,7 @@ if (
   isCrushed.name !== 'isCrushed'
 ) {
   warning(
-    'You are currently using minified code outside of NODE_ENV === "production". ' +
+      'You are currently using minified code outside of NODE_ENV === "production". ' +
       'This means that you are running a slower development build of Redux. ' +
       'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' +
       'or setting mode to production in webpack (https://webpack.js.org/concepts/mode/) ' +
@@ -28,6 +29,7 @@ if (
 
 export {
   createStore,
+  createChainStore,
   combineReducers,
   bindActionCreators,
   applyMiddleware,

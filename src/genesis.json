@@ -1,0 +1,31 @@
+{
+  "genesis_time": "2019-07-15T17:10:55.758502Z",
+  "chain_id": "test-chain-jpkTMG",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "validators": [
+    {
+      "address": "6C1E2D60D13A92FDAB35AC41349F0380A964AF84",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "PuxDXN3eGbL4AH9Nhzq0o5/8jTybEU08f2V1qVqGJlM="
+      },
+      "power": "10",
+      "name": ""
+    }
+  ],
+  "app_hash": ""
+}

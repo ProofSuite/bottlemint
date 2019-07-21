@@ -1,27 +1,17 @@
 {
-  "name": "redux",
+  "name": "redux-tendermint",
   "version": "4.0.4",
-  "description": "Predictable state container for JavaScript apps",
+  "description": "Tendermint state container for javascript applications",
   "license": "MIT",
-  "homepage": "http://redux.js.org",
-  "repository": "github:reduxjs/redux",
-  "bugs": "https://github.com/reduxjs/redux/issues",
   "keywords": [
     "redux",
     "reducer",
     "state",
-    "predictable",
-    "functional",
-    "immutable",
-    "hot",
-    "live",
-    "replay",
-    "flux",
-    "elm"
+    "tendermint",
+    "cosmos"
   ],
   "authors": [
-    "Dan Abramov <dan.abramov@me.com> (https://github.com/gaearon)",
-    "Andrew Clark <acdlite@me.com> (https://github.com/acdlite)"
+    "Van Isacker David <david@proofsuite.com> (https://github.com/dvisacker)"
   ],
   "main": "lib/redux.js",
   "unpkg": "dist/redux.js",
@@ -37,19 +27,20 @@
   "scripts": {
     "clean": "rimraf lib dist es coverage",
     "format": "prettier --write \"{src,test}/**/*.{js,ts}\" index.d.ts \"**/*.md\"",
-    "format:check": "prettier --list-different \"{src,test}/**/*.{js,ts}\" index.d.ts \"**/*.md\"",
     "lint": "eslint src test",
     "pretest": "npm run build",
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "test:cov": "npm test -- --coverage",
     "build": "rollup -c",
-    "prepare": "npm run clean && npm run format:check && npm run lint && npm test",
+    "prepare": "npm run clean && npm run lint",
     "examples:lint": "eslint examples",
     "examples:test": "cross-env CI=true babel-node examples/testAll.js"
   },
   "dependencies": {
     "loose-envify": "^1.4.0",
+    "lotion": "^0.4.26",
+    "lotion-connect": "^0.1.22",
     "symbol-observable": "^1.2.0"
   },
   "devDependencies": {
