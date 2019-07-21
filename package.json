@@ -1,7 +1,7 @@
 {
-  "name": "redux-tendermint",
-  "version": "4.0.4",
-  "description": "Tendermint state container for javascript applications",
+  "name": "bottlemint",
+  "version": "0.1.1",
+  "description": "Redux State As Tendermint In JS",
   "license": "MIT",
   "keywords": [
     "redux",
@@ -11,7 +11,10 @@
     "cosmos"
   ],
   "authors": [
-    "Van Isacker David <david@proofsuite.com> (https://github.com/dvisacker)"
+    "Van Isacker David <david@proofsuite.com> (https://github.com/dvisacker)",
+    "Mike De'Shazer <mike@proofsuite.com> (https://github.com/mikedeshazer)",
+    "Tai Kersen <mike@proofsuite.com> (https://github.com/kerstentw)"
+
   ],
   "main": "lib/redux.js",
   "unpkg": "dist/redux.js",
@@ -25,17 +28,7 @@
     "index.d.ts"
   ],
   "scripts": {
-    "clean": "rimraf lib dist es coverage",
-    "format": "prettier --write \"{src,test}/**/*.{js,ts}\" index.d.ts \"**/*.md\"",
-    "lint": "eslint src test",
-    "pretest": "npm run build",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
-    "test:cov": "npm test -- --coverage",
-    "build": "rollup -c",
-    "prepare": "npm run clean && npm run lint",
-    "examples:lint": "eslint examples",
-    "examples:test": "cross-env CI=true babel-node examples/testAll.js"
+  
   },
   "dependencies": {
     "loose-envify": "^1.4.0",
