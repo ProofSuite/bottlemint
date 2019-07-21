@@ -1,5 +1,5 @@
 # Bottlemint
-Bottlemint (Redux Tendermint, as if in a bottle) is a blockchain-backed state container for the creation of decentralized clients.  This library connects to a Lotion.js/Tendermint chain which act as the state for multiple frontends.  
+Bottlemint (Redux Tendermint, as if in a bottle) is a blockchain-backed state container for the creation of decentralized clients.  This library connects to a Lotion.js/Tendermint chain which act as the state for multiple frontends.  This was originally forked from [The Redux Project](https://github.com/reduxjs/redux).
 
 Redux is a predictable state container for JavaScript apps.  By combining it with a decentralized datastore, clientside developers can both experiment and help to develop fully decentralized websites and clients.
 
