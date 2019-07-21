@@ -104,6 +104,7 @@ This Token Transfer Demo shows how assets can be transferred and  monitored betw
 
 # TODO
 
+* Update name to something cooler and that David likes better
 * Containerize Demos for easy deploy
 * Split State between UI state and Blockchain state
 * Build demo app showcasing the use of `combineReducers()`
