@@ -3,13 +3,13 @@ Bottlemint (Redux Tendermint, as if in a bottle) is a blockchain-backed state co
 
 Redux is a predictable state container for JavaScript apps.  By combining it with a decentralized datastore, clientside developers can both experiment and help to develop fully decentralized websites and clients.
 
-The redux-tendermint package is a modified version of redux that synchronizes state between your frontend redux application and your tendermint chain.
+The Bottlemint package is a modified version of redux that synchronizes state between your frontend redux application and your tendermint chain.
 
 Redux and Tendermint are both state machines that update a state through a state function.
 - In the case of tendermint, the state function is usually noted `(state, tx) => state`
 - In the case of redux, the state function is usually written `(state, action) => state`
 
-Redux-tendermint allows your frontend to use the same state function (`=reducer`) as a lotion tendermint chain. Your frontend state can now be stored, without the need to set up a database, in a decentralized chain.
+Bottlemint allows your frontend to use the same state function (`=reducer`) as a lotion tendermint chain. Your frontend state can now be stored, without the need to set up a database, in a decentralized chain.
 
 If combined with an IPFS or Meshnet solution, sites powered by Redux Tendermint can become completely decentralized.
 
@@ -64,7 +64,7 @@ Your frontend state and your chain state are now connected.
 ```
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createChainStore } from 'redux-tendermint'
+import { createChainStore } from 'Bottlemint'
 import { reducer } from '@proofsuite/counterchain'
 import { genesis, chainId } from './config.json'
 import Counter from './components/Counter'
